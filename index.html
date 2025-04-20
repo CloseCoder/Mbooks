@@ -62,7 +62,7 @@
             Quagga.onDetected(function(data) {
                 const barcode = data.codeResult.code;
                 // API'ga so'rov yuborish
-                fetch('https://your-api-endpoint.com/api/books/update', {
+               fetch('https://mbooksa.netlify.app/.netlify/functions/update-book', { ... }), {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
